@@ -3,8 +3,11 @@
 
 .container{
     display:grid;
-    grid-template-columns: 20% 40% 10% 10% 10% 10%;
-    text-align: center; 
+    grid-template-columns: 30% 50% 5% 5% 5% 5%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
 }
 
 a{
@@ -13,8 +16,12 @@ a{
 }
 
 .Nav{
-    background-color: rgb(151, 151, 151);
     width: 100%;
+    background-color: rgb(34, 33, 33);
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+
 }
 
 html{
@@ -26,7 +33,7 @@ html{
 body{
     margin: 0;
     padding: 0;
-    background-color: rgb(191, 113, 113);
+    background-color: rgb(21, 18, 18);
     font-family: 'Raleway',sans-serif;
     line-height: 1.6;
 }
@@ -36,26 +43,43 @@ body{
 }
 
 .icon-large{
-    font-size: 25px;
+    font-size: 20px;
+    padding-left: 10px;
+    color: rgb(90, 92, 94);
 }
 
+.Nav2{
+    background-color: rgb(34, 33, 33);
+    
+}
 .search{
     border: .5px solid black;
     border-radius: 2.5px;
-    padding: 10px;
+    padding: 30px;
 
 }
 
 .search-bar{
     display: grid;
     grid-template-columns: 80% 10% 10%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.Nav2 .flex{
+.search-bar input{
+    background-color: rgb(21, 18, 18);
+    padding: 5px;
+    color: white;
+    
+
+}
+
+.flex{
     
     text-align: start;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 10%;
     height: 10%;
 }
@@ -66,10 +90,10 @@ body{
 
 .main{
     display: grid;
-    grid-template-columns: 10% 90%;
+    grid-template-columns: 5% 95%;
 }
 .video-card{
-    background-color: rgb(189, 185, 185);
+    background-color: rgb(21, 18, 18);
     
     border: 2px solid none;
 
@@ -85,7 +109,7 @@ body{
 
 .videos{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr 1fr;
 }
 
 .videos img{
@@ -98,6 +122,8 @@ body{
     display: inline-block;
   width: 40px;
   height: 40px;
+  padding: 20px;
+  padding-top: 30px;
     border-radius: 50%;
     grid-column: auto/span 1;
     grid-row: 3/span 1
@@ -114,27 +140,45 @@ body{
 }
 .description{
     grid-column: 2/span 2;
-    font-size: 15px;
+    font-size: 17px;
+    text-align: start;
+    color: white;
 }
 .username{
     grid-row: 4/span 1;
-    font-size: 11px;
-    text-align: start;
+    grid-column: 1/span 3;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+
 }
 .views{
     grid-row: 5/span 1;
-    font-size: 10px;
+    font-size: 11px;
     text-align: right;
+    color: white;
 
 
 
 }
 .upload-time{
     grid-row: 5/span 1;
-    font-size: 8px;
+    font-size: 11px;
     text-align: right;
+    color: white;
 
 
 
+
+}
+
+
+.logo img{
+        height: 20px;
+        color: aliceblue;
+}
+
+.logo .icon-large{
+    padding-right: 20px;
 }
 
