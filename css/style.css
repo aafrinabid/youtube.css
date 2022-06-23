@@ -109,7 +109,7 @@ body{
 
 .videos{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr 1fr;
 }
 
 .videos img{
@@ -181,3 +181,4 @@ body{
 .logo .icon-large{
     padding-right: 20px;
 }
+
